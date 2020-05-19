@@ -122,7 +122,7 @@
 #define USE_FIELD_INV_NUM 1
 
 /* Define this symbol to use the gmp implementation for num */
-#define USE_NUM_GMP 1
+#define USE_NUM_GMP 0
 
 /* Define this symbol to use no num implementation */
 /* #undef USE_NUM_NONE */
