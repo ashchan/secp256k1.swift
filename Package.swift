@@ -66,7 +66,8 @@ let package = Package(
             cSettings: [
                 .headerSearchPath(""),
                 .headerSearchPath("secp256k1"),
-                .define("HAVE_CONFIG_H"),
+                .headerSearchPath("secp256k1/src"),
+                .define("HAVE_CONFIG_H=1"),
             ]),
         .target(
             name: "secp256k1",

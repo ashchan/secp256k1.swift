@@ -18,10 +18,10 @@
 #define ECMULT_WINDOW_SIZE 15
 
 /* Define this symbol to enable the ECDH module */
-/* #undef ENABLE_MODULE_ECDH */
+#define ENABLE_MODULE_ECDH 1
 
 /* Define this symbol to enable the ECDSA pubkey recovery module */
-/* #undef ENABLE_MODULE_RECOVERY */
+#define ENABLE_MODULE_RECOVERY 1
 
 /* Define this symbol if OpenSSL EC functions are available */
 #define ENABLE_OPENSSL_TESTS 1
@@ -36,7 +36,7 @@
 #define HAVE_LIBCRYPTO 1
 
 /* Define this symbol if libgmp is installed */
-#define HAVE_LIBGMP 1
+/* #undef HAVE_LIBGMP */
 
 /* Define to 1 if you have the <memory.h> header file. */
 #define HAVE_MEMORY_H 1
@@ -116,16 +116,16 @@
 #define USE_FIELD_5X52 1
 
 /* Define this symbol to use the native field inverse implementation */
-/* #undef USE_FIELD_INV_BUILTIN */
+#define USE_FIELD_INV_BUILTIN 1
 
 /* Define this symbol to use the num-based field inverse implementation */
-#define USE_FIELD_INV_NUM 1
+/* #undef USE_FIELD_INV_NUM */
 
 /* Define this symbol to use the gmp implementation for num */
 /* #undef USE_NUM_GMP */
 
 /* Define this symbol to use no num implementation */
-/* #undef USE_NUM_NONE */
+#define USE_NUM_NONE 1
 
 /* Define this symbol to use the 4x64 scalar implementation */
 #define USE_SCALAR_4X64 1
@@ -134,10 +134,10 @@
 /* #undef USE_SCALAR_8X32 */
 
 /* Define this symbol to use the native scalar inverse implementation */
-/* #undef USE_SCALAR_INV_BUILTIN */
+#define USE_SCALAR_INV_BUILTIN 1
 
 /* Define this symbol to use the num-based scalar inverse implementation */
-#define USE_SCALAR_INV_NUM 1
+/* #undef USE_SCALAR_INV_NUM */
 
 /* Version number of package */
 #define VERSION "0.1"
