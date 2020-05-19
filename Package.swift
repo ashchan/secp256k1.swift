@@ -67,8 +67,6 @@ let package = Package(
                 .headerSearchPath(""),
                 .headerSearchPath("secp256k1"),
                 .define("HAVE_CONFIG_H"),
-                .define("ECMULT_WINDOW_SIZE=15"),
-                .define("ECMULT_GEN_PREC_BITS=2")
             ]),
         .target(
             name: "secp256k1",
