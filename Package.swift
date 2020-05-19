@@ -62,10 +62,10 @@ let package = Package(
                 "secp256k1/modules/ecdh",
                 "secp256k1/modules/recovery"
             ],
+            publicHeadersPath: "secp256k1/include"),
             cSettings: [
                 .headerSearchPath("secp256k1"),
             ],
-            publicHeadersPath: "secp256k1/include"),
         .target(
             name: "secp256k1",
             dependencies: ["libsecp256k1"],
